@@ -2,112 +2,242 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <title>Portfolio Website</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="style.css">
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <div class="portfolio-container">
-        <div class="hero">
-          <img src="./home-img.png" alt="" class="hero--image">
-          <div class="hero--bio">
-            <h1>Christian Jannus Sabolo</h1>
-            <h3>Bachelor of Science in Information System</h3>
-            <p class="basic-info">Welcome to my Portfolio Website.
-                Your Friendly BSIS Student</p>
-          </div>
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+
+
+
+
+    <nav class="navbr navbar-expand-custom navbar-mainbg fixed-top ">
+        <a class="navbar-brand navbar-logo" href="#">CJS</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#output">Output</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-        
-        <div class="Aboutme">
-          <img src="./Aboutimg (1).png" alt="" class="project-thumbnail">
-          <div class="project-name">
-            <h2 class="project-title">- About Me -</h2>
-            <p class="project-description">Welcome to my About Page! I'm Christian Jannus Sabolo, a 20-year-old student currently pursuing a Bachelor of Science in Information Systems (BSIS) at KLD Kolehiyo ng Dasmarinas. This is my portfolio website where I'll be sharing my journey, experiences, and insights. Join me as I navigate the exciting world of information systems and technology.</p>
-          </div>
-          <table>
-            <tr>              
-                <th>Educational Attainment</th>              
-            </tr>
-            <tr>              
-                <td>KLD (Current College )  <br>
-                  BSIS
-                   </td> 
-                   
-                <td>2023 - 2024</td>
-            </tr>
-            <tr>              
-                <td>AISAT (Previous College) <br>
-                   BSCS
-                    
-                    </td>
-                <td>2022 - 2023</td>
-            </tr>
-            <tr>              
-                <td>PCU (Senior High School) <br>
-                   ICT
-                    
-                    </td>
-                <td>2021 - 2022</td>
-            </tr>
-          </table>
-          <div class="Aboutme">
-          
-            <div class="project-name">
-              <h2 class="hobbies-head">-Hobbies-</h2>
-             <ul>
-              <li><img src="./2.png" alt=""></li>
-              <li><img src="./ball (2).png" alt=""></li>
-              <li><img src="./[removal.ai]_7262b21b-ba3f-49f8-99d9-d3655d454708-untitled-design-8.png" alt=""></li>
-              <li><img src="./Untitled design (9).png" alt=""></li>
-             </ul>
+    </nav>
+
+    <!--Home  Page-->
+    <div class="container d-block justify-content-center text-center home" style="font-family: 'Shrikhand', serif;">
+        <div class="txt" >
+            <div class="pt-3">
+                <img src="./c (4).png" alt="" class="img-fluid" style="max-width: 220px; border-radius: 50%;">
             </div>
-          </div>
+            <div class="txtani pt-5">
+                <p class="typed" style="width: 20px;">Hi, I'm Christian! a BSIS student.</p>
+            </div>
+            <div class="pt-5">
+                <a href="#about">
+                    <img class="bounce" src="./icons8-expand-arrow-26.png" alt="">
+                </a>
+            </div>
         </div>
-        
+    </div>
+   
+    
 
 
+<!--About page-->
 
+<div class="container text-center abt" id="about">
+    <div class="py-5">
+        <h1 >About Me</h1>
+    </div>
+    <p>I'm Christian Jannus Sabolo, a passionate BSIS student at KLD. At 20, I'm dedicated to technology, data, and business collaboration. I thrive on solving intricate problems, exploring system architectures, and staying updated on tech trends. Join me on this exciting journey through the dynamic world of Information Systems!</p>
+    <button type="button" class="btn btn-dark" style="padding: 10px 30px; z-index: 1;">See more</button>
+    <div class="hob">
+    <h1 class="py-5 ">My Hobbies</h1>
+    </div>
+    <div class="abtimg">
+        <img src="./icons8-basketball-48.png" alt="">
+        <img src="./icons8-code-48.png" alt="">
+        <img src="./icons8-gym-48.png" alt="">
+        <img src="./icons8-mobile-legends-bang-bang-48.png" alt="">
+    </div>
+</div>
 
+<!--Edu page-->
 
-        <form action="submit_form.php">
-            <h2>Contact me</h2>
-            <div class="input-container input-container--1">
-                <input id="Last_name" placeholder=" " class="input" required placeholder="Last name" />
-                <label for="name1" class="label">
-                  <span class="label-text">
-                    Last name  
-                  </span>
-                </label>
-              </div>
-              <div class="input-container input-container--1" >
-                <input id="Fisrt_name" placeholder=" " class="input" required placeholder="Last name"/>
-                <label for="name1" class="label">
-                  <span class="label-text">
-                    Fisrt name
-                  </span>
-                </label>
-              </div>
-              <div class="input-container input-container--1">
-                <input id="email" placeholder=" " class="input"  required placeholder="Last name"/>
-                <label for="name1" class="label">
-                  <span class="label-text">
-                    Email
-                  </span>
-                </label>
-              </div>
-              <div class="input-container input-container--2">
-                <textarea id="message" name="message" rows="4" required placeholder="" class="input"></textarea>
-                <label for="occupation" class="label">
-                    <span class="label-text">	
-                        Message
-                    </span>
-                    </label>
-            </div>
-            <button class="submit"><a href="">Submit</a></button>
-        </form>
-
+<div class="container edu">
+    <h1 class="text-center py-3">Educational Attainment</h1>
+    <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th>School</th>
+            <th>Course</th>
+            <th>Year</th>
+          </tr>
+          <tr>
+            <td>PCU</td>
+            <td>ICT</td>
+            <td>2021-2022</td>
+          </tr>
+          <tr>
+            <td>Aisat Collage</td>
+            <td>BSCS</td>
+            <td>2022-2023</td>
+          </tr>
+          <tr>
+            <td>KLD</td>
+            <td>BSIS</td>
+            <td>2023-2024</td>
+          </tr>
+        </tbody>
+      </table>
       
+</div>
+
+
+    <div class="output text-center py-5" id="output">
+        <h1 >My Output</h1>
+    </div>
+    <div class="container-fluid out">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-3">
+              <a href="https://su-nnaj.github.io/MyFirstHtml/">
+                <img src="./Untitled design (1).png" class="card-img-top" alt="Go to Website">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">My First HTML Project</h5>
+                <p class="card-text">Create your first HTML file. Be creative! </p>
+                <a href="https://github.com/Su-nnaj/MyFirstHtml" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <a href="https://su-nnaj.github.io/COR/">
+              <img src="COR.png" class="card-img-top" alt="...">
+            </a>
+              <div class="card-body">
+                <h5 class="card-title">Certificate of Registration</h5>
+                <p class="card-text">Create your COR using HTML</p>
+                <a href="https://github.com/Su-nnaj/COR" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card mb-3">
+                <a href="https://su-nnaj.github.io/Baisap-Fitness/#">
+              <img src="Baisap-Fitness.png" class="card-img-top" alt="...">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Informative Website</h5>
+                <p class="card-text">Create an Informative webpage</p>
+                <a href="https://github.com/Su-nnaj/Baisap-Fitness" class="btn btn-primary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+
+      <div class="container pb-2" id="contact">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">                        
+              <h2 class="form-title">Contact Me</h2>
+            </div>
+        </div>
+  
+        <div class="row">
+  
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  
+                <form id="contact-form" name="myForm" class="form" action="#"  method="POST" role="form">
+  
+                    <div class="form-group">
+                        <label class="form-label" id="nameLabel" for="name"></label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Last name" tabindex="1">
+                    </div>
+  
+                    <div class="form-group">
+                        <label class="form-label" id="subjectLabel" for="subject"></label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="First name" tabindex="2">
+                    </div>
+  
+                    <div class="form-group">
+                        <label class="form-label" id="emailLabel" for="email"></label>
+                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" tabindex="3">
+                    </div>
+  
+                    <div class="form-group">
+                        <label class="form-label" id="messageLabel" for="message"></label>
+                        <textarea rows="6" cols="60" name="message" class="form-control" id="message" placeholder="Your message" tabindex="4"></textarea>                                 
+                    </div>
+  
+                    <div class="text-center margin-top-25">
+                        <button type="submit" class="btn btn-mod btn-border btn-large">Send Message</button>
+                    </div>
+  
+                </form>
+              
+            </div>
+  
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+        <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+        <script src="./main.js"></script>
+
+        <script>
+            particlesJS.load('particles-js', 'particles.json', function() {
+                console.log('particles.js loaded');
+            });
+        </script>
 </body>
 </html>
